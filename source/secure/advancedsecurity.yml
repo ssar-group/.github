@@ -1,0 +1,13 @@
+# Configuration for Advanced Security features
+# Code scanning - Configuration for CodeQL analysis
+
+name: Advanced Security Settings
+
+resource: repository/advanced-security
+
+configuration:
+  enabled: true
+
+codeScanning:
+  enabled: true
+  minSeverity: warning
