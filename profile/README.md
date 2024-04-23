@@ -1,4 +1,4 @@
-![](../source/images/company-header-rtv.png)
+![](https://github.com/ssar-group/.github/blob/main/source/images/company-header-rtv.png)
 
 ## The company's mission
 
