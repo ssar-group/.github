@@ -1,20 +1,30 @@
-![](https://github.com/ssar-group/.github/blob/main/source/images/company-header-rtv.png)
+![](../source/images/company-header.png)
+
+<h4 align="center">
+  <a href="https://blog.ssar-group.com">Blogs</a>
+  •
+  <a href="mailto:contactus@ssar-group.com">Contact Us</a>
+</h4>
 
 ## The company's mission
 
-Is to provide a platform for the development of new technologies, powerful tools for video games and create Anit-cheat program to against the cheating in online game.
+We are working to provide tools for the development of new technologies, powerful tools for video games and to create an anti-cheat program to combat cheating in online games.
 
-## Involved the world
+## Tools, Services
 
-Open, build, and share your code with Open, a software / platform for building, creating amazing things.
+We have developed :
 
-* [Community Add-ons](https://marketplace.ssar-group.com/community?xref=addons)
-* [Community Open](https://open.ssar-group.com/chat)
-* [Game Engine](https://dev.ssar-group.com/open-engine)
-* [Game Development](https://dev.ssar-group.com)
+- [Vecteur Anti-Cheat](https://dev.ssar-group.com/gamedev/ac-vecteur) : A powerful anti-cheat uses AI.
 
-please visit [open.ssar-group.com](https://open.ssar-group.com/about) to learn more!
+- [ASL](https://dev.ssar-group.com/asl) : A complete framework for all utilities.
 
-----
+- [PulsarUI](https://dev.ssar-group.com/pulsarui) : A modern UI based on React.
 
-Any add-ons, projects, and builds that you create and share with the community are subject to the [Open Source License](https://terms.ssar-group.com/open-source-license), [Community Guidelines](https://terms.ssar-group.com/community-guidelines) and the [Open Source Code of Conduct](https://terms.ssar-group.com/open-code-of-conduct). For more infomation see the [FAQ](https://open.ssar-group.com/faq)
+## Documentation
+
+Visit [our docs](https://doc.ssar-group.com/) to view the full documentation.
+
+
+## Security
+
+If you discover a security vulnerability in our tools, we encourage you to report it responsibly and __*NOT*__ open a public issue. We will review all legitimate reports. To report any security vulnerability, please email [security-alert@ssar-group.com](mailto:security-alert@ssar-group.com).
