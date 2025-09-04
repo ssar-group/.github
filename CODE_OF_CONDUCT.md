@@ -1,9 +1,9 @@
-# SSAR Code Of Conduct
+# SSAR Code of Conduct
 
-All projects Open Source, members, and other are expected to follow the [Open Source Code of Conduct](https://terms.ssar-group.com/code-of-conduct#openSourceCode).
+We want SSAR projects to be welcoming, safe, and collaborative spaces.  
+All contributors, maintainers, and community members are expected to follow our [Open Source Code of Conduct](https://docs.ssar-group.com/legal/code-of-conduct?pr=opensoucre).
 
-Resources:
-
-* [Code of Conduct](https://terms.ssar-group.com/code-of-conduct)
-* [Open Source Code of Conduct](https://terms.ssar-group.com/code-of-conduct#openSourceCode)
-* For asking questions or concerns, contact [contact@ssar-group.com](mailto:contact@ssar-group.com)
+### Resources
+- [Full Code of Conduct](https://docs.ssar-group.com/legal/code-of-conduct)  
+- [Open Source Code of Conduct](https://docs.ssar-group.com/legal/code-of-conduct?pr=opensoucre)
+- Questions or concerns? Contact us at [contactus@ssar-group.com](mailto:contactus@ssar-group.com)
