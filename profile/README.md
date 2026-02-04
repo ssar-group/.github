@@ -1,5 +1,3 @@
-# SSAR Group
-
 ![SSAR Group Header](../source/images/company-header.png)
 
 <p align="center">
