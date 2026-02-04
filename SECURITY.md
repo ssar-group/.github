@@ -1,30 +1,67 @@
 # Security Notice
 
-![update](https://img.shields.io/badge/Last%20Updated-1/09/25-FFA500)
+![status](https://img.shields.io/badge/Security%20Policy-Active-success) ![Last Review](https://img.shields.io/badge/Last%20Review-February%2026-blue)
 
-At SSAR Group, the security of our customers' data, software products, and online presence is our top priority. We have implemented comprehensive measures to protect your information and ensure a safe experience.
+SSAR Group is committed to maintaining the security and integrity of our software products, systems, and customer data. We take security vulnerabilities seriously and appreciate the efforts of security researchers and users who help us maintain a secure environment.
 
-## Reporting Security Issues
+## Reporting Security Vulnerabilities
 
-> Note: Please do not report security vulnerabilities through public GitHub issues.
+> **Important: Do not report security vulnerabilities through public GitHub issues, discussions, or pull requests.**
 
-If you believe you have discovered a security vulnerability in our software, open source code, or add-ons, please report it by emailing us at [secure@ssar-group.com](mailto:secure@ssar-group.com) with the subject line: [SECURITY ISSUES]
+If you discover a security vulnerability in any SSAR Group software, open source code, service, or product, please report it through one of the following secure channels:
 
-Or please report them to the [SSAR Security Support Website](support.ssar-group.com/security/issues?action=report)
+1 - Primary Reporting Methods
+- **Email**: Send a detailed report to [secure@ssar-group.com](mailto:secure@ssar-group.com)
+- Subject line: `[SECURITY VULNERABILITY]`
+- Include a detailed description of the vulnerability
+- Provide steps to reproduce the issue
+- Include any relevant technical details or proof of concept
 
-We take all reports seriously and will respond promptly.
+2 - Security Portal: Submit a report via our [Security Support Website](https://support.ssar-group.com/security/issues?action=report)
 
-## Contact Us
+## What to Include in Your Report
+To help us assess and address the vulnerability efficiently, please include:
 
-If you have any questions regarding this privacy policy or other related matters, please feel free to contact us at:
+- Description of the vulnerability and its potential impact
+- Detailed steps to reproduce the issue
+- Affected versions, products, or components
+- Any proof-of-concept code or screenshots
+- Your contact information for follow-up questions
 
-- [secure@ssar-group.com](mailto:secure@ssar-group.com)
-- [sc@ssar-group.com](mailto:sc@ssar-group.com)
+## Our Commitment
+When you report a security vulnerability to SSAR Group, we commit to:
 
-## Preferred Languages
+- Acknowledging receipt of your report within 48 business hours
+- Providing an initial assessment within 5 business days
+- Keeping you informed of our progress throughout the investigation
+- Crediting you for the discovery (unless you prefer to remain anonymous)
 
-We strive to provide our services in the language of your choice. For security-related communications, we prefer correspondence in English to ensure clarity and prompt handling. Other communications may be conducted in your preferred language.
+## Coordinated Vulnerability Disclosure
 
-## Policy
+SSAR Group follows a Coordinated Vulnerability Disclosure (CVD) process. We request that security researchers:
 
-SSAR Group and its affiliated companies adhere to the principles outlined in our [Coordinated Vulnerability Disclosure (CVD) policy](https://terms.ssar-group.com/cvd).
+- Allow us reasonable time to investigate and address the vulnerability before public disclosure
+- Make good faith efforts to avoid privacy violations, data destruction, or service interruption
+- Do not exploit the vulnerability beyond what is necessary to demonstrate the issue
+
+For complete details, please review our [Coordinated Vulnerability Disclosure Policy](https://docs.ssar-group.com/terms/cvd).
+
+## Communication Preferences
+
+For security-related matters, we conduct all correspondence in English to ensure clear communication and expedited response times. For general inquiries, we accommodate your preferred language where possible.
+
+### Additional Contact Information
+
+For other security-related questions or concerns:
+
+- Primary: secure@ssar-group.com
+- Security Compliance: sc@ssar-group.com
+
+## Scope
+
+This security policy applies to:
+
+- All SSAR Group software products and services
+- Official SSAR Group repositories and open source projects
+- SSAR Group web properties and infrastructure
+- Third-party integrations and add-ons developed by SSAR Group
