@@ -1,30 +1,58 @@
-![](../source/images/company-header.png)
+# SSAR Group
 
-<h4 align="center">
-  <a href="https://blog.ssar-group.com">Blogs</a>
+![SSAR Group Header](../source/images/company-header.png)
+
+<p align="center">
+  <a href="https://blog.ssar-group.com">Blog</a>
   •
-  <a href="mailto:contactus@ssar-group.com">Contact Us</a>
-</h4>
+  <a href="https://docs.ssar-group.com">Documentation</a>
+  •
+  <a href="mailto:contactus@ssar-group.com">Contact</a>
+</p>
 
-## The company's mission
+## About Us
 
-We are working to provide tools for the development of new technologies, powerful tools for video games and to create an anti-cheat program to combat cheating in online games.
+SSAR Group develops cutting-edge tools and technologies for game development, software engineering, and online security. Our mission is to empower developers with powerful, reliable solutions while maintaining the integrity of online gaming communities.
 
-## Tools, Services
+## Our Products
 
-We have developed :
+### Vecteur Anti-Cheat
+A next-generation anti-cheat system powered by artificial intelligence, designed to combat cheating in online games with advanced detection capabilities and minimal performance impact.
 
-- [Vecteur Anti-Cheat](https://dev.ssar-group.com/gamedev/ac-vecteur) : A powerful anti-cheat uses AI.
+[Learn more →](https://dev.ssar-group.com/gamedev/ac-vecteur)
 
-- [ASL](https://dev.ssar-group.com/asl) : A complete framework for all utilities.
+### ASL Framework
+A comprehensive utility framework providing developers with essential tools and libraries for modern application development.
 
-- [PulsarUI](https://dev.ssar-group.com/pulsarui) : A modern UI based on React.
+[Learn more →](https://dev.ssar-group.com/asl)
+
+### PulsarUI
+A modern, React-based UI component library designed for building fast, accessible, and visually appealing user interfaces.
+
+[Learn more →](https://dev.ssar-group.com/pulsarui)
+
+## Open Source Commitment
+
+We actively create, support, and contribute to open source projects across various domains. All our public repositories use status labels to help you understand their current state and maintenance level.
+
+### Repository Status Labels
+
+| Label | Status | Description |
+|:------|:-------|:------------|
+| ![active](https://img.shields.io/badge/status-active-brightgreen.svg?colorA=303033&colorB=44cc11) | **Active** | Actively developed and maintained with regular updates, issue reviews, and pull request acceptance |
+| ![stable](https://img.shields.io/badge/status-stable-blue.svg?colorA=303033&colorB=007ec6) | **Stable** | Production-ready and maintained with bug fixes and security updates; no major feature development planned |
+| ![experimental](https://img.shields.io/badge/status-experimental-blueviolet.svg?colorA=303033&colorB=a08a2c) | **Experimental** | Work in progress or proof of concept; expect breaking changes and frequent updates |
+| ![obsolete](https://img.shields.io/badge/status-obsolete-yellow.svg?colorA=303033&colorB=ff8a2c) | **Obsolete** | No longer maintained or supported; available for historical reference only |
+| ![archived](https://img.shields.io/badge/status-archived-red.svg?colorA=303033&colorB=e05d44) | **Archived** | Read-only repository; no issues or pull requests accepted |
 
 ## Documentation
 
-Visit [our docs](https://doc.ssar-group.com/) to view the full documentation.
+Comprehensive documentation for all our products and services is available at [docs.ssar-group.com](https://docs.ssar-group.com).
 
+## Community & Support
 
-## Security
+- **Blog**: Stay updated with our latest developments at [blog.ssar-group.com](https://blog.ssar-group.com)
+- **General Inquiries**: [contactus@ssar-group.com](mailto:contactus@ssar-group.com)
+- **Security Reports**: [security@ssar-group.com](mailto:security@ssar-group.com)
 
-If you discover a security vulnerability in our tools, we encourage you to report it responsibly and __*NOT*__ open a public issue. We will review all legitimate reports. To report any security vulnerability, please email [security-alert@ssar-group.com](mailto:security-alert@ssar-group.com).
+For contribution guidelines and community standards, please review our [Code of Conduct](CODE_OF_CONDUCT.md).
