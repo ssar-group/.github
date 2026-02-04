@@ -1,9 +1,7 @@
 # Code of Conduct
 
 ![Code of Conduct](https://img.shields.io/badge/Code%20of%20Conduct-Active-success)
-![Last Review](https://img.shields.io/badge/Last%20Review-February%202026-blue)
-
-## Our Commitment
+![Last Review](https://img.shields.io/badge/Last%20Review-February%2026-blue)
 
 SSAR Group is committed to fostering welcoming, safe, and collaborative environments for all contributors, maintainers, and community members. We believe that diverse perspectives and inclusive participation strengthen our projects and community.
 
