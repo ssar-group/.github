@@ -27,7 +27,12 @@ A comprehensive utility framework providing developers with essential tools and 
 ### PulsarUI
 A modern, React-based UI component library designed for building fast, accessible, and visually appealing user interfaces.
 
-[Learn more →](https://dev.ssar-group.com/pulsarui)
+[Learn more →](https://dev.ssar-group.com/asl-webly/pulsar)
+
+### opm
+A modern CLI for multi-ecosystem project scaffolding and dependency management, powered by templates for rapid setup.
+
+[Learn more →](https://github.com/ssar-group/opm)
 
 ## Open Source Commitment
 
