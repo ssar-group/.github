@@ -1,12 +1,13 @@
 # Security Notice
 
-![status](https://img.shields.io/badge/Security%20Policy-Active-success) ![Last Review](https://img.shields.io/badge/Last%20Review-February%2026-blue)
+![status](https://img.shields.io/badge/Security%20Policy-Active-success) ![Last Review](https://img.shields.io/badge/Last%20Review-March%2026-blue)
 
 SSAR Group is committed to maintaining the security and integrity of our software products, systems, and customer data. We take security vulnerabilities seriously and appreciate the efforts of security researchers and users who help us maintain a secure environment.
 
 ## Reporting Security Vulnerabilities
 
-> **Important: Do not report security vulnerabilities through public GitHub issues, discussions, or pull requests.**
+> [!CAUTION]
+> Do not report security vulnerabilities through public GitHub issues, discussions, or pull requests.
 
 If you discover a security vulnerability in any SSAR Group software, open source code, service, or product, please report it through one of the following secure channels:
 
@@ -55,7 +56,7 @@ For security-related matters, we conduct all correspondence in English to ensure
 For other security-related questions or concerns:
 
 - Primary: secure@ssar-group.com
-- Security Compliance: sc@ssar-group.com
+- Security Compliance: sc@ssar-group.com[^1]
 
 ## Scope
 
@@ -65,3 +66,5 @@ This security policy applies to:
 - Official SSAR Group repositories and open source projects
 - SSAR Group web properties and infrastructure
 - Third-party integrations and add-ons developed by SSAR Group
+
+[^1]: This address is used only for the high security case. Do not reply if the response does not come from a `<...>@em.ssar-group.com` address.
