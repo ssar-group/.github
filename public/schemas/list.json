@@ -1,9 +1,7 @@
 {
   "$schema": "https://api.ssar-group.com/.content/sch/listing_file_ref.schema.json",
-
   "available": [],
-
   "disabled": [],
-
-  "deprecated": []
+  "deprecated": [],
+  "invalid": []
 }
