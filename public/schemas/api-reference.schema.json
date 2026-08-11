@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ssar-group/.github/blob/main/pub/sch/api-reference.schema.json",
+
+  "title": "API References",
+  "description": "Reference registry for APIs and their available versions.",
+  "type": "object",
+
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+
+    "references": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/api"
+      }
+    }
+  },
+
+  "required": ["references"],
+
+  "additionalProperties": false,
+
+  "$defs": {
+    "api": {
+      "type": "object",
+
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+
+        "versions": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/apiVersion"
+          }
+        }
+      },
+
+      "required": ["name", "versions"],
+
+      "additionalProperties": false
+    },
+
+    "apiVersion": {
+      "type": "object",
+
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+
+        "endpoint": {
+          "type": "string",
+          "format": "uri"
+        },
+
+        "status": {
+          "type": "string",
+          "enum": [
+            "development",
+            "beta",
+            "stable",
+            "deprecated",
+            "disabled",
+            "legacy",
+            "deleted"
+          ]
+        },
+
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+
+        "requireToken": {
+          "type": "boolean"
+        }
+      },
+
+      "required": ["version", "endpoint"],
+
+      "additionalProperties": false
+    }
+  }
+}

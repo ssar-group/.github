@@ -1,0 +1,57 @@
+{
+  "$schema": "../schemas/api-reference.schema.json",
+
+  "references": {
+    "default-api": {
+      "name": "SSAR API",
+
+      "versions": {
+        "v1": {
+          "version": "1.89.5-prod",
+          "endpoint": "https://api.ssar-group.com/v1/",
+          "status": "legacy",
+
+          "features": ["legacy", "old-tool-api"]
+        },
+        "v2": {
+          "version": "2.134.1-prod",
+          "endpoint": "https://api.ssar-group.com/v2/",
+          "status": "stable",
+
+          "features": ["rest", "api-key", "server-process"]
+        },
+        "v3": {
+          "version": "3.56.2-prod",
+          "endpoint": "https://api.ssar-group.com/v3/",
+          "status": "stable",
+
+          "features": [
+            "rest",
+            "authentication",
+            "pagination",
+            "search",
+            "downloads",
+            "uploads",
+            "scripts",
+            "cross-request",
+            "mcp",
+            "llms",
+            "server-process"
+          ]
+        }
+      }
+    },
+    "developper-api": {
+      "name": "Developper API",
+
+      "versions": {
+        "v1": {
+          "version": "1.21.6-prod",
+          "endpoint": "https://developpers.ssar-group.com/api/v3/",
+          "status": "beta",
+          "requireToken": true
+        }
+      }
+    }
+  }
+}
