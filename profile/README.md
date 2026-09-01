@@ -12,11 +12,6 @@
   <a href="mailto:contactus@ssar-group.com">Contact</a>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/status-active-brightgreen.svg?style=flat-square" alt="Organization Status">
-  <img src="https://img.shields.io/github/repo-count/ssar-group?style=flat-square&label=public%20repositories" alt="Repositories">
-</p>
-
 ## About SSAR Group
 
 **SSAR Group** is a software and technology company focused on building reliable tools for developers, game studios, and online communities.
