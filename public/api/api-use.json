@@ -11,7 +11,8 @@
           "endpoint": "https://api.ssar-group.com/v1/",
           "status": "legacy",
 
-          "features": ["legacy", "old-tool-api"]
+          "features": ["legacy", "old-tool-api"],
+          "requireToken": true
         },
         "v2": {
           "version": "2.134.1-prod",
@@ -21,7 +22,7 @@
           "features": ["rest", "api-key", "server-process"]
         },
         "v3": {
-          "version": "3.56.2-prod",
+          "version": "3.57.1-prod",
           "endpoint": "https://api.ssar-group.com/v3/",
           "status": "stable",
 
@@ -46,9 +47,15 @@
 
       "versions": {
         "v1": {
-          "version": "1.21.6-prod",
-          "endpoint": "https://developpers.ssar-group.com/api/v3/",
+          "version": "1.22.1-prod",
+          "endpoint": "https://api.ssar-group.com/dev/v1/",
           "status": "beta",
+          "requireToken": true
+        },
+        "c2": {
+          "version": "C2.1.0-prod",
+          "endpoint": "https://api.ssar-group.com/dev/c2/",
+          "status": "development",
           "requireToken": true
         }
       }
