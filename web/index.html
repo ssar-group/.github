@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overview SGRP</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        /* SSAR Group brand colors */
+        --void: #3a2e39;
+        --surface: #463943;
+        --ink: #f7f4f1;
+        --faint: #cbb9a8;
+        --wire: rgba(220, 199, 190, 0.22);
+
+        --brand-pink: #ff4365;
+        --brand-blue: #009ddc;
+        --brand-sand: #cbb9a8;
+        --brand-mist: #dcc7be;
+
+        --active: #009ddc;
+        --dev: #ff4365;
+        --prerelease: #dcc7be;
+        --experimental: #cbb9a8;
+        --hold: #756b72;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--void);
+        color: var(--ink);
+        font-family: "Space Grotesk", Arial, sans-serif;
+        line-height: 1.5;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a:focus-visible,
+      button:focus-visible {
+        outline: 2px solid var(--brand-pink);
+        outline-offset: 3px;
+      }
+
+      code,
+      .mono {
+        font-family: "IBM Plex Mono", ui-monospace, monospace;
+      }
+
+      .page {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 0 32px 96px;
+      }
+
+      /* ---- header ---- */
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 76px;
+        border-bottom: 1px solid var(--wire);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 600;
+        font-size: 15px;
+      }
+
+      .brand img {
+        display: block;
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+      }
+
+      .brand .dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--brand-pink);
+      }
+
+      nav {
+        display: flex;
+        gap: 24px;
+        font-size: 14px;
+        color: var(--faint);
+      }
+
+      nav a:hover {
+        color: var(--ink);
+      }
+
+      /* ---- hero ---- */
+
+      .hero {
+        padding: 56px 0 44px;
+        border-bottom: 1px solid var(--wire);
+      }
+
+      .filename {
+        color: var(--faint);
+        font-size: 13px;
+        margin: 0 0 22px;
+      }
+
+      .filename .amber {
+        color: var(--brand-pink);
+      }
+
+      h1 {
+        margin: 0 0 18px;
+        font-size: clamp(30px, 4vw, 40px);
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        max-width: 20ch;
+      }
+
+      .intro {
+        max-width: 56ch;
+        margin: 0 0 28px;
+        font-size: 16px;
+        color: var(--faint);
+      }
+
+      .meta-line {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 22px;
+        font-size: 13px;
+        color: var(--faint);
+      }
+
+      .meta-line b {
+        color: var(--ink);
+        font-weight: 500;
+      }
+
+      /* ---- registry ---- */
+
+      section {
+        padding: 48px 0;
+        border-bottom: 1px solid var(--wire);
+      }
+
+      .section-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 26px;
+        gap: 16px;
+      }
+
+      .section-head h2 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .section-head p {
+        margin: 0;
+        font-size: 13px;
+        color: var(--faint);
+      }
+
+      .registry {
+        border-top: 1px solid var(--wire);
+      }
+
+      .entry {
+        display: grid;
+        grid-template-columns: 150px 1fr 120px;
+        align-items: start;
+        gap: 24px;
+        padding: 18px 14px;
+        border-bottom: 1px solid var(--wire);
+        border-left: 2px solid transparent;
+        transition:
+          background 120ms ease,
+          border-color 120ms ease;
+      }
+
+      .entry:hover {
+        background: var(--surface);
+        border-left-color: var(--status-color, var(--wire));
+      }
+
+      .entry-status {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding-top: 2px;
+      }
+
+      .entry-status .dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--status-color, var(--faint));
+        flex-shrink: 0;
+      }
+
+      .entry-status span {
+        font-size: 12.5px;
+        color: var(--status-color, var(--faint));
+      }
+
+      .entry-name {
+        margin: 0 0 5px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .entry-desc {
+        margin: 0;
+        font-size: 14px;
+        color: var(--faint);
+        max-width: 52ch;
+      }
+
+      .entry-tag {
+        text-align: right;
+        font-size: 12px;
+        color: var(--faint);
+        padding-top: 3px;
+      }
+
+      /* ---- notes ---- */
+
+      .notes {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .note {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        gap: 20px;
+        padding: 4px 0;
+      }
+
+      .note .tag {
+        font-size: 12.5px;
+        color: var(--brand-pink);
+        padding-top: 2px;
+      }
+
+      .note p {
+        margin: 0;
+        font-size: 14.5px;
+        color: var(--faint);
+        max-width: 54ch;
+      }
+
+      .note strong {
+        color: var(--ink);
+        font-weight: 500;
+      }
+
+      /* ---- footer ---- */
+
+      footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding-top: 26px;
+        font-size: 12.5px;
+        color: var(--faint);
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          padding: 0 18px 64px;
+        }
+
+        nav {
+          display: none;
+        }
+
+        .entry {
+          grid-template-columns: 1fr;
+          gap: 6px;
+        }
+
+        .entry-status {
+          padding-top: 0;
+        }
+
+        .entry-tag {
+          text-align: left;
+        }
+
+        .note {
+          grid-template-columns: 1fr;
+          gap: 4px;
+        }
+
+        footer {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page">
+      <header>
+        <a class="brand" href="/">
+          <img src="./../source/images/sgrp-white.png" width="40" height="40" />
+          SSAR Group
+        </a>
+
+        <nav>
+          <a href="#registry">Registry</a>
+          <a href="#notes">Notes</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <p class="filename mono">
+            <span class="amber">ssar-group</span>.github.io
+          </p>
+
+          <h1>What we're building, and where it stands</h1>
+          <p class="intro">
+            A running list of SSAR Group projects. What's shipping, what's
+            paused, and what's still an open question.
+          </p>
+
+          <div class="meta-line mono">
+            <span><b>7</b> tracked projects</span>
+            <span>updated <b>September 2026</b></span>
+          </div>
+        </section>
+
+        <section id="registry">
+          <div class="section-head">
+            <h2>Registry</h2>
+            <p>sorted by submission order</p>
+          </div>
+
+          <div class="registry">
+            <article class="entry" style="--status-color: var(--hold)">
+              <div class="entry-status mono">
+                <span class="dot"></span>
+                <span>on hold</span>
+              </div>
+              <div>
+                <h3 class="entry-name">Vecteur Anti-Cheat</h3>
+                <p class="entry-desc">
+                  Detection and integrity tooling for supported game
+                  environments.
+                </p>
+              </div>
+              <div class="entry-tag mono">security</div>
+            </article>
+
+            <article class="entry" style="--status-color: var(--dev)">
+              <div class="entry-status mono">
+                <span class="dot"></span>
+                <span>in development</span>
+              </div>
+              <div>
+                <h3 class="entry-name">ASL</h3>
+                <p class="entry-desc">
+                  ASL provides developers with a collection of utilities,
+                  libraries, and tools designed to simplify application
+                  development and accelerate common workflows.
+                </p>
+              </div>
+              <div class="entry-tag mono">framework</div>
+            </article>
+
+            <article class="entry" style="--status-color: var(--dev)">
+              <div class="entry-status mono">
+                <span class="dot"></span>
+                <span>in development</span>
+              </div>
+              <div>
+                <h3 class="entry-name">WalletPro Studio</h3>
+                <p class="entry-desc">
+                  Wallet management application and supporting tooling.
+                </p>
+              </div>
+              <div class="entry-tag mono">software</div>
+            </article>
+
+            <article class="entry" style="--status-color: var(--prerelease)">
+              <div class="entry-status mono">
+                <span class="dot"></span>
+                <span>pre-release</span>
+              </div>
+              <div>
+                <h3 class="entry-name">OPM</h3>
+                <p class="entry-desc">
+                  OPM is a cross-ecosystem CLI designed to simplify project
+                  creation, dependency management, and development workflows
+                  through reusable templates.
+                </p>
+              </div>
+              <div class="entry-tag mono">package-manager</div>
+            </article>
+
+            <article class="entry" style="--status-color: var(--experimental)">
+              <div class="entry-status mono">
+                <span class="dot"></span>
+                <span>experimental</span>
+              </div>
+              <div>
+                <h3 class="entry-name">PCF</h3>
+                <p class="entry-desc">
+                  Early-stage utility project. See github project.
+                </p>
+              </div>
+              <div class="entry-tag mono">utility</div>
+            </article>
+
+            <article class="entry" style="--status-color: var(--dev)">
+              <div class="entry-status mono">
+                <span class="dot"></span>
+                <span>in development</span>
+              </div>
+              <div>
+                <h3 class="entry-name">OpenStudio IDE Standalone</h3>
+                <p class="entry-desc">
+                  Standalone desktop IDE for the OpenScript ecosystem, built on
+                  Electron and Next.js.
+                </p>
+              </div>
+              <div class="entry-tag mono">desktop-app</div>
+            </article>
+
+            <article class="entry" style="--status-color: var(--active)">
+              <div class="entry-status mono">
+                <span class="dot"></span>
+                <span>active</span>
+              </div>
+              <div>
+                <h3 class="entry-name">OpenScript</h3>
+                <p class="entry-desc">
+                  Core language and ecosystem development, syntax, tooling, and
+                  specifications.
+                </p>
+              </div>
+              <div class="entry-tag mono">language</div>
+            </article>
+          </div>
+        </section>
+
+        <section id="notes">
+          <div class="section-head">
+            <h2>What's next</h2>
+          </div>
+
+          <div class="notes">
+            <div class="note">
+              <span class="tag mono">docs</span>
+              <p>
+                <strong>Documentation</strong> Expand the public docs for active
+                projects and their developer workflows.
+              </p>
+            </div>
+
+            <div class="note">
+              <span class="tag mono">infra</span>
+              <p>
+                <strong>Infrastructure</strong> Improve shared tooling before
+                widening project scope.
+              </p>
+            </div>
+
+            <div class="note">
+              <span class="tag mono">roadmap</span>
+              <p>
+                <strong>Roadmap</strong> Projects on hold or experimental will
+                get proper scoping once priorities settle.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <span>SSAR Group / Public</span>
+        <span>Last updated: September 2026</span>
+      </footer>
+    </div>
+  </body>
+</html>
